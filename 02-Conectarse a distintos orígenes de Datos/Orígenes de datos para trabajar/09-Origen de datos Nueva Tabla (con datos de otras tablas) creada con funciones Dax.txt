@@ -1,0 +1,11 @@
+Tabla con filtro:
+
+Tabla 1 = FILTER(contribuyentes;contribuyentes[ID propietario]>5)
+
+
+
+Tablas de agrupamiento:
+
+Tabla 2 = SUMMARIZE(COCHES;COCHES[Año matriculación];COCHES[Nº plazas])
+Tabla 3 = SUMMARIZE(COCHES;COCHES[Año matriculación];COCHES[Nº plazas];"total impuesto" ; SUM(COCHES[Importe_Impuesto_Coche]))
+Tabla 4 = DISTINCT('COCHES AUTO'[Provincia])
